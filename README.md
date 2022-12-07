@@ -88,4 +88,4 @@ View the total utilized budget of a department—in other words, the combined sa
 
 ### Walkthrough video:
 
-### URL of the GitHub repository:
+### URL of the GitHub repository: https://github.com/Getitdonemin/MasterEmployeeTracker
