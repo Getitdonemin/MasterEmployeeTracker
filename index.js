@@ -21,8 +21,8 @@ function masterEmployeeTracker() {
                     "Attach an employee",
                     "Update employee role",
                     "Update employee's manager",
-                    "Delete role from database",
-                    "Delete employee from database",
+                    "delete role from database",
+                    "delete employee from database",
                     "Exit"]
             },
         ])
@@ -73,13 +73,13 @@ function masterEmployeeTracker() {
                         masterEmployeeTracker();
                     });
                     break;
-                case "Delete role from database":
-                    manageDB.DeleteRole(function () {
+                case "delete role from database":
+                    manageDB.deleteRole(function () {
                         masterEmployeeTracker();
                     });
                     break;
-                case "Delete employee from database":
-                    manageDB.DeleteEmployee(function () {
+                case "delete employee from database":
+                    manageDB.deleteEmployee(function () {
                         masterEmployeeTracker();
                     });
                     break;

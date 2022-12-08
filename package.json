@@ -1,5 +1,5 @@
 {
-  "name": "MasterEmployeeTracker",
+  "name": "masteremployeetracker",
   "version": "1.0.0",
   "description": "With mySQL this program has the ability to update a database for your employees through the command line",
   "main": "index.js",
