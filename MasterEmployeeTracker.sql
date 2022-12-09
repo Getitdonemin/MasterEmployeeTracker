@@ -1,10 +1,10 @@
-/* database of masteremployeetracker */
+/* database of MasterEmployeeTracker */
 
-DROP DATABASE IF EXISTS employeeDatabase;
+DROP DATABASE IF EXISTS MasterEmployeeTracker;
 
-CREATE DATABASE employeeDatabase;
+CREATE DATABASE MasterEmployeeTracker;
 
-USE employeeDatabase;
+USE MasterEmployeeTracker;
 
 CREATE TABLE department
 (

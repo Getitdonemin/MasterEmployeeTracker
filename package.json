@@ -4,6 +4,7 @@
   "description": "With mySQL this program has the ability to update a database for your employees through the command line",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "jest"
   },
   "repository": {
@@ -15,7 +16,7 @@
   "dependencies": {
     "console.table": "^0.10.0",
     "dotenv": "^16.0.3",
-    "inquirer": "^9.1.4",
+    "inquirer": "^8.2.5",
     "mysql2": "^2.3.3"
   }
 }

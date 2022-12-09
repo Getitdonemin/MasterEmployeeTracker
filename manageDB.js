@@ -1,10 +1,10 @@
 //created all the functions in this manageDB.js file that'll all be exported for index.js to use
-var mysql = require("mysql");
+var mysql2 = require("mysql2");
 require("dotenv").config();
 const consoleTable = require('console.table');
 const inquirer = require("inquirer");
 
-var connection = mysql.newConnection({
+var connection = mysql2.createConnection({
     host: "localhost",
 
     // port will be on 3306 if orignal port is not set up
