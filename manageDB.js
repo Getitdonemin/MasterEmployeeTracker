@@ -6,13 +6,13 @@ const inquirer = require("inquirer");
 
 var connection = mysql.createConnection({
     connectionLimit : 10,
-    host: process.env.DB_HOST_LOG,
+    host: "localhost",
 
     // port will be on 3306 if orignal port is not set up
-    port:process.env.DB_PORT,
+    port:3306,
 
     // Username
-    user: process.env.DB_USER,
+    user: "root",
 
     // Password
     password: process.env.DB_PASSWORD,
@@ -156,7 +156,7 @@ newEmployee = (doneCreateEmployeeCallback) => {
             {
                 name: "managerId",
                 type: "input",
-                message: " Is he currently overseen by a manager? Yes? Add manager's employee ID. No? Press enter."
+                message: "Add maanger's ID, if not a manager press enter."
             }
         ]).then(function (userInput) {
             var data = {
@@ -188,13 +188,13 @@ function updateEmployeeRole(doneUpdateEmployeeRCallback) {
                 { // First pick an employee then select what you desire to change 
                     name: "employeeId",
                     type: "number",
-                    message: "Change employee's ID",
+                    message: "Choose the employee's ID that you want to change",
 
                 },
                 {
                     name: "employeeUpdateRole",
                     type: "number",
-                    message: "Change employee's role",
+                    message: "Change employee's role with role id",
                 },
 
             ]).then((userInput) => {

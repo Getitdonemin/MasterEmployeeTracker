@@ -9,7 +9,7 @@ function masterEmployeeTracker() {
     inquirer
         .prompt([
             {
-                message: "Welcome to the Employee Database.",
+                message: "Welcome to the Master Employee Tracker!",
                 type: "list",
                 name: "databaseMenu",
                 choices: [
