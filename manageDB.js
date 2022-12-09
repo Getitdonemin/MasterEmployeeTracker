@@ -1,21 +1,22 @@
 //created all the functions in this manageDB.js file that'll all be exported for index.js to use
-var mysql2 = require("mysql2");
+var mysql = require("mysql2");
 require("dotenv").config();
 const consoleTable = require('console.table');
 const inquirer = require("inquirer");
 
-var connection = mysql2.createConnection({
-    host: "localhost",
+var connection = mysql.createConnection({
+    connectionLimit : 10,
+    host: process.env.DB_HOST_LOG,
 
     // port will be on 3306 if orignal port is not set up
-    port: 3306,
+    port:process.env.DB_PORT,
 
     // Username
-    user: "root",
+    user: process.env.DB_USER,
 
     // Password
     password: process.env.DB_PASSWORD,
-    database: "employeeDatabase"
+    database: "MasterEmployeeTracker"
 });
 
 connection.connect(function (err) {
