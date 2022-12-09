@@ -86,6 +86,6 @@ Delete departments, roles, and employees.
 
 View the total utilized budget of a department—in other words, the combined salaries of all employees in that department.
 
-### Walkthrough video:
+### Walkthrough video link: [WalkthroughVideoofMET.webm](https://user-images.githubusercontent.com/107437104/206643630-ac4780c8-3ec7-45c6-ba69-e014fdfc970d.webm)
 
 ### URL of the GitHub repository: https://github.com/Getitdonemin/MasterEmployeeTracker
